@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://adobe-my.sharepoint.com/:f:/r/personal/fornacia_adobe_com/Documents/All/crosswalk"
+    url: "https://author-p34570-e1263228.adobeaemcloud.com/bin/franklin.delivery/fornacif/crosswalk/main"
     type: "markup"
     suffix: ".html"
