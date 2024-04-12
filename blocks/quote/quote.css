@@ -1,35 +1,30 @@
-.cards > ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
-  grid-gap: 16px;
+.block.quote {
+  background-color: #ccc;
+  padding: 0 0 24px;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
 }
 
-.cards > ul > li {
-  border: 1px solid var(--dark-color);
-  background-color: var(--background-color)
-}
-
-.cards .cards-card-body {
+.block.quote blockquote {
   margin: 16px;
+  text-indent: 0;
 }
 
-.cards .cards-card-image p {
-  margin: 0;
+.block.quote > div:last-child > div {
+  margin: 0 16px;
+  font-size: small;
+  font-style: italic;
+  position: relative;
 }
 
-.cards .cards-card-image {
-  line-height: 0;
-}
-
-.cards .cards-card-body > *:first-child {
-  margin-top: 0;
-}
-
-.cards > ul > li img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+.block.quote > div:last-child > div::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  height: 5px;
+  width: 30px;
+  background-color: darkgray;
 }
