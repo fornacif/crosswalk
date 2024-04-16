@@ -179,6 +179,13 @@
       },
       {
         "component": "richtext",
+        "name": "text2",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
         "name": "text",
         "value": "",
         "label": "Text",
