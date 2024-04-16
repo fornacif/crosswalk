@@ -173,7 +173,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "imageAlt",
+        "name": "toto",
         "label": "Alt",
         "value": ""
       },
@@ -212,7 +212,7 @@
          "component": "text-input",
          "name": "field1",
          "value": "",
-         "label": "field2",
+         "label": "field1",
          "valueType": "string"
        },
        {
