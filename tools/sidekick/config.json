@@ -6,7 +6,8 @@
       "title": "Accessibility Mode",
       "environments": [
         "preview",
-        "dev"
+        "dev",
+        "live"
       ],
       "event": "accessibility-mode"
     }
