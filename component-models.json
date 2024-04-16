@@ -204,5 +204,24 @@
          "value": ""
        }
      ]
+  },
+  {
+    "id": "test",
+    "fields": [
+       {
+         "component": "text-input",
+         "name": "field1",
+         "value": "",
+         "label": "field2",
+         "valueType": "string"
+       },
+       {
+         "component": "text-input",
+         "valueType": "string",
+         "name": "field2",
+         "label": "field2",
+         "value": ""
+       }
+     ]
   }
 ]
