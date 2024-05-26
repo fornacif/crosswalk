@@ -206,25 +206,6 @@
      ]
   },
   {
-    "id": "test",
-    "fields": [
-       {
-         "component": "text-input",
-         "name": "field1",
-         "value": "",
-         "label": "field1",
-         "valueType": "string"
-       },
-       {
-         "component": "text-input",
-         "valueType": "string",
-         "name": "field2",
-         "label": "field2",
-         "value": ""
-       }
-     ]
-  },
-  {
     "id": "page-metadata",
     "fields": [
       {
