@@ -1,4 +1,4 @@
-/* Nissan-Inspired Hero Component Styles */
+/* Nissan-Inspired Hero Component Styles - Desktop First */
 
 :root {
   --nissan-blue: #1152F0;
@@ -11,36 +11,36 @@
 .hero-container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem 2rem;
   background-color: var(--nissan-white);
 }
 
 .hero-wrapper {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   position: relative;
-  overflow: hidden;
 }
 
 .hero.block {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   width: 100%;
 }
 
 .hero.block > div:first-child {
   position: relative;
   overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 10px 20px var(--nissan-shadow);
-  transition: transform 0.3s ease;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px var(--nissan-shadow);
+  transition: all 0.4s ease;
 }
 
 .hero.block > div:first-child:hover {
-  transform: scale(1.02);
+  transform: scale(1.025);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .hero.block picture {
@@ -53,21 +53,21 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 16px;
 }
 
 .hero.block > div:nth-child(2) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .hero.block [data-aue-prop="text"] p {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
   color: var(--nissan-gray);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   line-height: 1.2;
   position: relative;
 }
@@ -75,45 +75,81 @@
 .hero.block [data-aue-prop="text"] p::before {
   content: '';
   position: absolute;
-  bottom: -0.5rem;
+  bottom: -0.75rem;
   left: 0;
-  width: 80px;
-  height: 4px;
+  width: 100px;
+  height: 6px;
   background-color: var(--nissan-blue);
+  border-radius: 3px;
 }
 
 .default-content-wrapper h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 800;
   color: var(--nissan-blue);
-  margin-top: 1rem;
+  margin-top: 2rem;
   text-transform: uppercase;
-  letter-spacing: -1px;
+  letter-spacing: -1.5px;
 }
 
-/* Responsive Design */
+/* Tablet Responsive Design */
 @media screen and (max-width: 1024px) {
+  .hero-container {
+      padding: 3rem 1.5rem;
+  }
+
+  .hero.block {
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+  }
+
+  .hero.block [data-aue-prop="text"] p {
+      font-size: 2.5rem;
+  }
+
+  .default-content-wrapper h1 {
+      font-size: 3.5rem;
+  }
+}
+
+/* Mobile Responsive Design */
+@media screen and (max-width: 768px) {
   .hero.block {
       grid-template-columns: 1fr;
+      gap: 1.5rem;
   }
 
   .hero-wrapper {
       flex-direction: column;
+      gap: 1.5rem;
   }
 
   .hero.block > div:first-child,
   .hero.block > div:nth-child(2) {
       width: 100%;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .hero-container {
-      padding: 1rem;
-  }
 
   .hero.block [data-aue-prop="text"] p {
       font-size: 2rem;
+  }
+
+  .default-content-wrapper h1 {
+      font-size: 2.75rem;
+  }
+
+  .hero.block > div:nth-child(2) {
+      padding: 1rem;
+  }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+  .hero-container {
+      padding: 2rem 1rem;
+  }
+
+  .hero.block [data-aue-prop="text"] p {
+      font-size: 1.75rem;
   }
 
   .default-content-wrapper h1 {
