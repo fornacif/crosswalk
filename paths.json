@@ -1,10 +1,10 @@
 {
   "mappings": [
     "/content/crosswalk/:/",
-    "/content/dam/crosswalk/:/"
+    "/content/dam/crosswalk/static/:/static/"
   ],
   "includes": [
     "/content/crosswalk/",
-    "/content/dam/crosswalk/"
+    "/content/dam/crosswalk/static/"
   ]
 }
