@@ -5,6 +5,6 @@
   ],
   "includes": [
     "/content/crosswalk",
-    "/content/dam/crosswalk/static"
+    "/content/dam/crosswalk/static/"
   ]
 }
