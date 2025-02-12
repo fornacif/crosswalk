@@ -111,7 +111,7 @@ export default async function decorate(block) {
 
                   <div class="form-group">
                       <label class="form-label" for="email">Email</label>
-                      <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required>
+                      <input type="email" id="email" name="email" class="form-input" placeholder="Entrer votre email" required>
                   </div>
 
                   <div class="form-group">
