@@ -142,7 +142,7 @@ export default async function decorate(block) {
                       </select>
                   </div>
 
-                  <button type="submit" id="submitBtn" class="submit-button">
+                  <button type="submit" id="submitBtn" class="submit-button" data-aue-prop="cta" data-aue-type="text" data-aue-label="CTA">
                       Découvrir
                   </button>
               </form>

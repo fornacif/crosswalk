@@ -72,6 +72,13 @@
         "name": "title",
         "value": "",
         "label": "Title"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta",
+        "value": "",
+        "label": "CTA"
       }
     ]
   },
