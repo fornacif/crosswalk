@@ -47,7 +47,7 @@ export default async function decorate(block) {
       .form-select {
           width: 100%;
           padding: 8px 12px;
-          border: 1px solid #1e3a8a;
+          border: 1px solidrgb(0, 0, 0);
           border-radius: 4px;
           font-size: 16px;
           color: #000;
@@ -60,24 +60,20 @@ export default async function decorate(block) {
       .form-input:focus,
       .form-select:focus {
           outline: none;
-          border-color: #1e3a8a;
+          border-color: black;
           box-shadow: 0 0 0 2px rgba(30, 58, 138, 0.2);
       }
 
       .submit-button {
           width: 100%;
           padding: 10px 16px;
-          background-color: #1e3a8a;
+          background-color: black
           color: white;
           border: none;
           border-radius: 4px;
           font-size: 16px;
           cursor: pointer;
           transition: background-color 0.2s;
-      }
-
-      .submit-button:hover {
-          background-color: #1e40af;
       }
 
       .submit-button:disabled {
@@ -101,7 +97,7 @@ export default async function decorate(block) {
   const content = document.createRange().createContextualFragment(`
       <div class="form-container">
           <div class="form-wrapper">
-              <h2 class="form-title">L'endroit depuis lequel vous rêveriez de déployer AEM !</h2>
+              <h2 class="form-title" data-aue-prop="title" data-aue-type="text" data-aue-label="Title">L'endroit depuis lequel vous rêveriez de déployer AEM !</h2>
               
               <form id="modernForm">
                   <div class="form-group">
