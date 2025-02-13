@@ -1,5 +1,7 @@
-// block.js
+import { readBlockConfig } from '../../scripts/aem.js';
+
 export default async function decorate(block) {
+  const config = readBlockConfig(block);
   block.textContent = '';
 
   // Add CSS
@@ -97,7 +99,7 @@ export default async function decorate(block) {
   const content = document.createRange().createContextualFragment(`
       <div class="form-container">
           <div class="form-wrapper">
-              <h2 class="form-title" data-aue-prop="title" data-aue-type="text" data-aue-label="Title"></h2>
+              <h2 class="form-title" data-aue-prop="title" data-aue-type="text" data-aue-label="Title">${config.title}</h2>
               
               <form id="modernForm">
                   <div class="form-group">
@@ -143,7 +145,7 @@ export default async function decorate(block) {
                   </div>
 
                   <button type="submit" id="submitBtn" class="submit-button">
-                      <span data-aue-prop="cta" data-aue-type="text"></span>
+                    ${config.cta}
                   </button>
               </form>
           </div>
