@@ -97,7 +97,7 @@ export default async function decorate(block) {
   const content = document.createRange().createContextualFragment(`
       <div class="form-container">
           <div class="form-wrapper">
-              <h2 class="form-title" data-aue-prop="title" data-aue-type="text" data-aue-label="Title">L'endroit depuis lequel vous rêveriez de déployer AEM !</h2>
+              <h2 class="form-title" data-aue-prop="title" data-aue-type="text" data-aue-label="Title"></h2>
               
               <form id="modernForm">
                   <div class="form-group">
@@ -142,8 +142,8 @@ export default async function decorate(block) {
                       </select>
                   </div>
 
-                  <button type="submit" id="submitBtn" class="submit-button" data-aue-prop="cta" data-aue-type="text" data-aue-label="CTA">
-                      Découvrir
+                  <button type="submit" id="submitBtn" class="submit-button">
+                      <span data-aue-prop="cta" data-aue-type="text"></span>
                   </button>
               </form>
           </div>
