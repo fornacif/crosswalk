@@ -49,7 +49,7 @@ export default async function decorate(block) {
       .form-select {
           width: 100%;
           padding: 8px 12px;
-          border: 1px solidrgb(0, 0, 0);
+          border: 1px solid rgb(0, 0, 0);
           border-radius: 4px;
           font-size: 16px;
           color: #000;
@@ -62,14 +62,12 @@ export default async function decorate(block) {
       .form-input:focus,
       .form-select:focus {
           outline: none;
-          border-color: black;
           box-shadow: 0 0 0 2px rgba(30, 58, 138, 0.2);
       }
 
       .submit-button {
           width: 100%;
           padding: 10px 16px;
-          background-color: black
           color: white;
           border: none;
           border-radius: 4px;
