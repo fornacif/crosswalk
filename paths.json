@@ -1,6 +1,7 @@
 {
   "mappings": [
     "/content/crosswalk/:/",
+    "/content/crosswalk/redirects:/redirects.json",
     "/content/dam/crosswalk/static/:/static/"
   ],
   "includes": [
