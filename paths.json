@@ -2,12 +2,12 @@
   "mappings": [
     "/content/crosswalk/:/",
     "/content/crosswalk/redirects:/redirects.json",
-    "/content/crosswalk/new:/new2",
+    "/content/crosswalk/landings/:/",
     "/content/dam/crosswalk/static/:/static/"
   ],
   "includes": [
     "/content/crosswalk",
-    "/content/crosswalk/new",
+    "/content/crosswalk/landings",
     "/content/dam/crosswalk/static/"
   ]
 }
